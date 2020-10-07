@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test name="Test">
+
+  	<parameter name="platformNamevalue" value="Android"></parameter>
+  		<parameter name="platformNameVersion" value="10"></parameter>
+  			<parameter name="deviceName" value="Appium"></parameter>
+  			<parameter name="udid" value="urdeviceid"></parameter>
+     <classes>
+      <class name="com.gk.univmed.auto.tests.UniversalMediaLandingPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
