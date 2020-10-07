@@ -1,6 +1,5 @@
 # univmediaappauto
 # appium-pageobjectmodel
-
 Appium mobile test automation framework with Page Object Model design using Java + Maven + TestNG
 This POC has two case[One is positive Case & one is negative case]-This framewok is being integrated with Allure reports
 PRE REQUISITE:-
