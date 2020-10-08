@@ -56,17 +56,21 @@ Framework/POC implements below best practices
 - Use of inheritence
 - Abstraction layer for test data
 -----------------------------------
-How to Generate Allure Reports
+------------------------------
+#How to Generate Allure Reports
 ===============================
-= download https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.13.0/ for mac or windows
--allure --version
-- Navigate to project directory & run allure serve allure-results
 - In order to generate a report, we should install Allure command-line interpreter.
-- Download the latest version as a zip archive from bintray.
+- Download the latest version as a zip archive from bintrayfrom the below link as per yous OS
+-  https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.13.0/ for mac or windows
 - Then, click the Files tab and then download the .zip file for windows. For Linux, you can download .tgz file. For Mac use brew to install allure.
-- Unpack the archive to allure-commandline directory.[C:\automationsoftware\allure-2.13.0\bin]
-- Navigate to bin directory.
-- Add allure to system PATH.
+- Unpack the archive to allure-commandline directory and navigate to bin in my case it's.[C:\automationsoftware\allure-2.13.0\bin]
+- Navigate to bin directory.[copy the path up to bin]
+- Add allure to system PATH.[Define name as allure in env. variables]
+- Navigate to command line and check allure is available on the syatem by running command allure --version 
+- Navigate to project directory & run allure serve allure-results command to see the allure report.
+
+- NOTE:-After importing the project you may see the error- Cannot switch on a value of type String for source level below 1.7. Only convertible int values or enum variables are permitted- please select the quickfix.(jre 1.7 & above]
+
 NOTE:-After importing the project you may see the error- Cannot switch on a value of type String for source level below 1.7. Only convertible int values or enum variables are permitted- please select the quickfix.(jre 1.7 & above]
 -
 
