@@ -3,7 +3,6 @@ package com.gk.univmed.auto.base;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.Properties;
-
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,7 +11,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -41,40 +39,29 @@ public class AppiumBase {
 				String propFilename = "config.properties";
 				inputStream = getClass().getClassLoader().getResourceAsStream(propFilename);
 				props.load(inputStream);
-
 				DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-
 				desiredCapabilities.setCapability("platformName", platformName);
 				desiredCapabilities.setCapability("platformVersion", platformVersion);
 				desiredCapabilities.setCapability("deviceName", deviceName);
 				desiredCapabilities.setCapability("udid", udid);
-
 				desiredCapabilities.setCapability("automationName", props.getProperty("androidAutomationName"));
 				desiredCapabilities.setCapability("appPackage", props.getProperty("androidAppPackage"));
 				desiredCapabilities.setCapability("appActivity", props.getProperty("androidAppActivity"));
-
 				URL appurl = getClass().getClassLoader().getResource(props.getProperty("androidAppLocation"));
 
 				// Install direct from git.
 				desiredCapabilities.setCapability("app", props.getProperty("appInstallationfromGitRepo"));
-
 				URL url = new URL(props.getProperty("appiumURL"));
-
 				driver = new AndroidDriver(url, desiredCapabilities);
-
 				String sessionid = driver.getSessionId().toString();
 			} catch (Exception e) {
 				e.printStackTrace();
-
 			}
 		}
-
 	}
 
 	public void waitForVisibility(MobileElement e) {
-
 		WebDriverWait wait = new WebDriverWait(driver, WAIT);
-
 		wait.until(ExpectedConditions.visibilityOf(e));
 	}
 
@@ -87,9 +74,7 @@ public class AppiumBase {
 			t.getStackTrace();
 			return false;
 		}
-
 	}
-
 	public void click(MobileElement e) {
 		waitForVisibility(e);
 		e.click();
@@ -107,5 +92,4 @@ public class AppiumBase {
 		driver.quit();
 
 	}
-
 }
