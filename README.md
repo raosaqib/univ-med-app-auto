@@ -1,4 +1,5 @@
 # univmediaappauto
+### You may face issue while cloning from master as upon cloning you may not find anything in the folder on your local..so if so better to download as zip
 #appium-pageobjectmodel
 - Appium mobile test automation framework with Page Object Model design using Java + Maven + TestNG
 - This POC has two case[One is positive Case & one is negative case]-This framewok is being integrated with Allure reports
