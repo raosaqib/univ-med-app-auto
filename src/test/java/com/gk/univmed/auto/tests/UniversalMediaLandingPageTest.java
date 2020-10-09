@@ -3,7 +3,6 @@ package com.gk.univmed.auto.tests;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import com.gk.univmed.auto.base.AppiumBase;
 import com.gk.univmed.auto.pages.UniversalMediaPlayerLandingpage;
 import io.qameta.allure.Severity;
@@ -33,5 +32,4 @@ public class UniversalMediaLandingPageTest extends AppiumBase {
 		String actualtext = umtp.getlandingPageText();
 		Assert.assertEquals(actualtext, "Universal Music Player");
 	}
-
 }
