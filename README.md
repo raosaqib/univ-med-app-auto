@@ -1,5 +1,5 @@
 # univmediaappauto
-#### You may face issue while cloning from master as upon cloning you may not find anything in the folder on your local..so if so better to download as zip
+#### You may face issue while cloning from master as upon cloning you may not find anything in the folder on your local..so it's better to download as zip
 #### Please replace your device udid in the testng.xml to run the test on ur device.
 #### aditionally you may provide the url path if you want to deploy the .apk file directly from any remote location.For this please provide the .apk path in the config.properties.
 ##### Alos there are two properties. you may delete any one file.
@@ -72,3 +72,7 @@ How to Generate Allure Reports
 - Navigate to bin directory.
 - Add allure to system PATH.
 NOTE:-After importing the project you may see the error- Cannot switch on a value of type String for source level below 1.7. Only convertible int values or enum variables are permitted- please select the quickfix.(jre 1.7 & above]
+- Limitations:-
+- code need to update to start the appium prgramatically.
+-logs management for  multiple devices.
+-Thread local concept need to be implment to achieve suncronizaion during parallel execution
