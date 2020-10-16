@@ -1,4 +1,4 @@
-pick the code fomr mater
+pick the code from mater
 # univmediaappauto
 #appium-pageobjectmodel
 - Appium mobile test automation framework with Page Object Model design using Java + Maven + TestNG
